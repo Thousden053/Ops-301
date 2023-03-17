@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Script:         Ops 301 Ops Chall 02
+# Purpose:        Append, date and time
+# Why:            It's important to know how to time stamp your documents for record purposes.
+
+# Main
+
+
+cont_var=1
+while [[ $cont_var -eq 1 ]]; do
+    echo -e "Please select an option: \n(Enter the number only)  \n1: Hello World \n2: Ping Self \n3: IP info \n4: End"
+    read entry
+    if [[ $entry -eq 1 ]]; then
+        echo "Hello World"
+    elif [[ $entry -eq 2 ]]; then
+        echo "Enter your IPv4 address"
+        read address
+        ping -c 4 $address
+    elif [[ $entry -eq 3 ]]; then
+        ip a
+    elif [[ $entry -eq 4 ]]; then 
+        cont_var=0
+    else
+        echo "Invalid option, try again"
+    fi
+done
+
+#End
