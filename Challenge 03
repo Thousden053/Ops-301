@@ -6,11 +6,15 @@
 
 # Main
 
-
+#Sets counter for loop
 cont_var=1
+# establishes loop, as long as the variable's value is 1 it will continuously run.
 while [[ $cont_var -eq 1 ]]; do
+# Starts the menu code, by displaying options and asking for entry.
     echo -e "Please select an option: \n(Enter the number only)  \n1: Hello World \n2: Ping Self \n3: IP info \n4: End"
+    #records entry and assigns value to a variable.
     read entry
+    #conditional to compare user entry with menu option's
     if [[ $entry -eq 1 ]]; then
         echo "Hello World"
     elif [[ $entry -eq 2 ]]; then
