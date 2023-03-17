@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script:         Ops 301 Ops Chall 02
-# Purpose:        Append, date and time
-# Why:            It's important to know how to time stamp your documents for record purposes.
+# Script:         Ops 301 Ops Chall 03
+# Purpose:        Creates a menu for a user to select different options, and the code will perform until the user selects the exit option.
+# Why:            Familiarizes us with how simple menu's are made with code.
 
 # Main
 
