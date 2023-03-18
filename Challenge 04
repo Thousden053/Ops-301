@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Script:         Ops 301 Ops Chall 03
+# Purpose:        Creates a menu for a user to select different options, and the code will perform until the user selects the exit option.
+# Why:            Familiarizes us with how simple menu's are made with code.
+
+#Main
+
+backup_dir="/var/log/backups"
+syslog="/var/log/syslog"
+wtmp="/var/log/wtmp"
+
+mkdir -p "$backup_dir"
+
+process_file() {
+  file="$1"
+  timestamp=$(date +"%Y%m%d%H%M%S")
+  zip_name="$backup_dir/$(basename "$file")-$timestamp.zip"
+  
+  size_before=$(du -h "$file")
+  zip -r "$zip_name" "$file" && truncate -s 0 "$file"
+  size_after=$(du -h "$zip_name")
+  
+  echo "Before: $size_before, After: $size_after"
+}
+
+process_file "$syslog"
+process_file "$wtmp"
+
+#End
