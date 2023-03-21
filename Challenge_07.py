@@ -15,4 +15,4 @@ for (root, dirs, files) in os.walk(path):
     
     print("Directories: ", dirs)
   
-    print("Files: ", files) 
+    print("Files: ", files)
