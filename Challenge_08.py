@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Script:         Ops 301 Ops Chall 07
+# Script:         Ops 301 Ops Chall 08
 # Purpose:        Uses a list to hold values rather than assigning individual variables.
 # Why:            Groups variables into a list, and assigns them place values to call upon one or multiple when needed.
 
