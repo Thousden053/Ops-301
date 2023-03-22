@@ -23,13 +23,13 @@
 import os
 
 #defines 3 variable with scripts from host os language (in this case bash)
-var1 = [os.system("whoami")]
-var2 = [os.system("ip a")]
-var3 = [os.system("lshw -short")]
-
+var1=os.system("whoami")
+var2=os.system("ip a")
+var3=os.system("lshw -short")
+var4=4
 #prints defined variables to screen
-print (var1)
+print ("Running command: ", var1)
 print (var2)
 print (var3)
-
+print (var4)
 #End
