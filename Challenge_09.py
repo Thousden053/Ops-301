@@ -25,6 +25,9 @@
 #             print("The input is not an integer. Please try again.")
 
 # defines function with nested try/ return to verify if the input is an integer.
+# try/return is done by taking user input and trying to convert to integer, if it is possible code will continue. 
+# If not able to convert to int,user will be told to try again until int is given
+
 def integer_input(prompt):
     while True:
         
