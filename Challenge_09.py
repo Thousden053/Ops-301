@@ -14,46 +14,27 @@
 
 # Main
 
+#1st draft of function
+# def integer_input(prompt):
+#     while True:
+#         user_input = input(prompt)
+        
+#         try:
+#             return int(user_input)
+#         except ValueError:
+#             print("The input is not an integer. Please try again.")
 
-# 1st draft
-# print("These were your entries:\n", "Entry 1: \n" ,a, "\n Entry 2: \n", b)
-
-# try:
-#     a = int(a)
-# except ValueError:
-#         print("That's not an integer. Please try again.")
-
-# try:
-#     b = int(b)
-# except ValueError:
-#         print("That's not an integer. Please try again.")
-
-# try:
-#     a = int(a)
-#     print(f"You entered the integer: {a}")
-# except ValueError:
-#     print(a, " is not a valid integer.")
-
-# try:
-#     b = int(b)
-#     print(f"You entered the integer: {b}")
-# except ValueError:
-#     print(b, " is not a valid integer.")
-
-
-#2nd draft
-import sys
 # defines function with nested try/ return to verify if the input is an integer.
 def integer_input(prompt):
     while True:
-        user_input = input(prompt)
         
         try:
-            return int(user_input)
+           user_input = int(input(prompt))
+           return user_input
         except ValueError:
             print("The input is not an integer. Please try again.")
 
-#assigns each integer to a variable
+#assigns the function above to two variables. 
 a = integer_input("Please enter the first integer: ")
 b = integer_input("Please enter the second integer: ")
 #used to compare the two integers values given by user
