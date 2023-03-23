@@ -43,7 +43,7 @@
 
 #2nd draft
 import sys
-
+# defines function with nested try/ return to verify if the input is an integer.
 def integer_input(prompt):
     while True:
         user_input = input(prompt)
@@ -53,9 +53,10 @@ def integer_input(prompt):
         except ValueError:
             print("The input is not an integer. Please try again.")
 
+#assigns each integer to a variable
 a = integer_input("Please enter the first integer: ")
 b = integer_input("Please enter the second integer: ")
-
+#used to compare the two integers values given by user
 if a == b:
     print (a, " and ", b, "are equivalent")
 elif a != b:
@@ -63,7 +64,9 @@ elif a != b:
     if a < b or a <= b:
         print(a ," is less than or equal to", b)
     else:
-        print(a ," is greater than or equal to",b )
+        print(a ," is greater than or equal to",b)
+else:
+    pass 
 
 
 
