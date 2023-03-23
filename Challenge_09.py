@@ -60,15 +60,10 @@ if a == b:
     print (a, " and ", b, "are equivalent")
 elif a != b:
     print (a, " and ", b, "are not equivalent")
-else:
-    print ("Error")
-
-if a < b:
-    print(a ," is less than ", b)
-elif a <= b:
-    print(a ," is less than or equal to", b)
-else:
-    print(a ," is greater than or equal to",b )
+    if a < b or a <= b:
+        print(a ," is less than or equal to", b)
+    else:
+        print(a ," is greater than or equal to",b )
 
 
 
