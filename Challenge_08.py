@@ -15,7 +15,7 @@ print(List)
 #Outputs the 4th object in list, remember 0 is the 1st object.
 print(List[3])
 #Outputs the 6th through 10th value in the list
-print(List[5:9])
+print(List[5:10])
 
 #Changes the 7th value in the defined list to "onion"
 List[6] = "onion"
