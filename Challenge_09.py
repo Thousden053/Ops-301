@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # Script:         Ops 301 Ops Chall 09
-# Purpose:        
-# Why:     
+# Purpose:        Asks user for input of integers, verifies the inputs are integers then compares the inputs
+# Why:            Comparing values is useful for small to large values.
 
 # Equals: a == b
 # Not Equals: a != b

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # Script:         Ops 301 Ops Chall 10
-# Purpose:        
-# Why:     
+# Purpose:        Creates a file, opens it, add lines, and prints them, then removes the file
+# Why:            Appending in the CLI is very useful.
 
 
 # Using file handling commands, create a Python script that creates a new .txt file, appends three lines, prints to the screen the first line, then deletes the .txt file.
