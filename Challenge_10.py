@@ -29,8 +29,8 @@ with open("test.txt", "w") as file:
 # Opens the file in read mode and print the 
 with open("test.txt", "r") as file:
     for i in range(3):
-        line = file.readline()
-        print(line)
+        lines = file.readline()
+        print(lines)
 
 # Delete the file
 import os
