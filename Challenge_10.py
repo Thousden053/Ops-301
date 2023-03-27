@@ -26,13 +26,13 @@ with open("test.txt", "w") as file:
     file.write("This is the second line.\n")
     file.write("This is the third line.\n")
 
-# Opens the file in read mode and print the 
+# Opens the file in read mode and prints the first 3 lines
 with open("test.txt", "r") as file:
     for i in range(3):
         lines = file.readline()
         print(lines)
 
-# Delete the file
+# Deletes the file
 import os
 os.system("rm test.txt")
 # #End
