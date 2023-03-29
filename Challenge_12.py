@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-# Script:         Ops 301 Ops Chall 07
-# Purpose:        
-# Why:     
+# Script:         Ops 301 Ops Chall 12
+# Purpose:        Asks user for url and http method input to perform http request
+# Why:            Automating simple tasks like this is what makes code so powerful. I could add on to the code to save the output to a file and save it for later.  
 
 # Main
 
@@ -72,9 +72,11 @@
 #                     counter3 == 2
     
 
-#I created the entire code above, but could not figure out why it wouldn't loop back to "would you like to perform another request" line.
-#Chat gpt didn't help when I asked. Figured it out to be that i incorrectly set the counters
-#Chat GPT helped with the  "method = requests.request(response, url) status_code = method.status_code" part of the code.
+#I created the entire code above, but was having looping error
+#I asked chatgpt to help, but it couldn't fix it. I had to go line by line and find it
+#Figured it out to be that I incorrectly set the counters
+#Chat GPT helped with syntax errors only.
+
 
 
 
