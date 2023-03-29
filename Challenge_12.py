@@ -167,4 +167,66 @@ while counter < 2:
    
 
 
-    
+    #ChatGPT analysis to make more dry
+    #Will review for learning
+
+#     import requests 
+
+# def get_valid_url():
+#     url = input("Please enter a URL: \n")
+#     if not url.startswith('http://') and not url.startswith('https://'):
+#         url = 'http://' + url
+#     return url
+
+# def get_valid_method(options):
+#     response = input("Enter an HTTP method: ").upper()
+#     if response in options:
+#         print("Your response was:", response)
+#     else:
+#         print("Invalid HTTP method. Please try again.")
+#         response = get_valid_method(options)
+#     return response
+
+# def get_user_confirmation():
+#     verify = input("Would you like to continue with your request? (Yes/No)\n").lower()
+#     while verify not in ['yes', 'no']:
+#         print("Invalid input. Please enter 'Yes' or 'No'.")
+#         verify = input("Would you like to continue with your request? (Yes/No)\n").lower()
+#     return verify
+
+# def print_status(status_code):
+#     status_text = ''
+#     if status_code in requests.status_codes.codes:
+#         status_code = method.status_code
+#     if status_code == 200:
+#         status_text = 'OK'
+#     elif status_code == 201:
+#         status_text = 'Created'
+#     elif status_code == 400:
+#         status_text = 'Bad Request'
+#     elif status_code == 401:
+#         status_text = 'Unauthorized'
+#     elif status_code == 404:
+#         status_text = 'Not Found'
+#     elif status_code == 405:
+#         status_text = 'Invalid Request'
+#     elif status_code == 500:
+#         status_text = 'Internal Server Error'
+#     print("Response status code:", status_code, "-", status_text)
+
+# options = ["GET","POST","PUT","DELETE","HEAD","PATCH","OPTIONS"]
+# counter = 1
+
+# while counter < 2:
+#     url = get_valid_url()
+#     response = get_valid_method(options)
+#     method = requests.request(response, url)
+#     status_code = method.status_code
+#     print_status(status_code)
+#     verify = get_user_confirmation()
+#     if verify == "yes":
+#         continue
+#     else:
+#         print("You've chosen to cancel, Goodbye.")
+#         break
+
