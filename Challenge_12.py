@@ -72,9 +72,9 @@
 #                     counter3 == 2
     
 
-#I created the entire code above, but was having looping error
-#I asked chatgpt to help, but it couldn't fix it. I had to go line by line and find it
-#Figured it out to be that I incorrectly set the counters
+#I created all code, but was having looping error
+#I asked chatgpt to help, but it couldn't fix it. I had to go line by line and find the issue.
+#Figured it out to be that I incorrectly set the counters.
 #Chat GPT helped with syntax errors only.
 
 
