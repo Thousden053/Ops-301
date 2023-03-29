@@ -76,33 +76,50 @@
 #Chat gpt didn't help when I asked. Figured it out to be that i incorrectly set the counters
 #Chat GPT helped with the  "method = requests.request(response, url) status_code = method.status_code" part of the code.
 
+
+
+#enables use of requests in python
 import requests 
 
+#user input
 url = input("Please enter a URL: \n")
+#compares user input with following strings, if either are not in the input then they will be added. 
+#I wanted to make cover typo's, but spent too much time on the code already.
 if not url.startswith('http://') and not url.startswith('https://'):
     url = 'http://' + url
 
+#establishes list for later use
 options = ["GET","POST","PUT","DELETE","HEAD","PATCH","OPTIONS"]
 
+#establishes counter for while loop
 counter = 1
+#establishes while loop to correct user error
 while counter < 2:
+    #user input
     print("You're about to perform an HTTP request. Please select an option:")
+    #for loop to print all items in the list "options"
     for item in options:
         print(item)
-
+    #user input (.upper() used to conver input to upper for matching to list.)
     response = input("Enter an HTTP method: ").upper()
+    #checks if response matches a value in list "options"
     if response in options:
         print("Your response was:", response)
     else:
         print("Invalid HTTP method. Please try again.")
        
-
+    #counter for 2nd while loop.
     counter2 = 1
+    #2nd while loop to correct user error.
     while counter2 < 2:
+        #user input (.lower() converts input to lower case for matching to strings defined in if, elif)
         verify = input("Would you like to continue with your request? (Yes/No)\n").lower()
         if verify == "yes":
+            #assigns http request command to variable "method"
             method = requests.request(response, url)
+            #assigns the status code output of the http request to var "status_code"
             status_code = method.status_code
+            #verifies if the status_code output matches any of the below given status codes and will print to screen whichever matches.
             if status_code in requests.status_codes.codes:
                 status_code = method.status_code
             status_text = ''
@@ -122,6 +139,7 @@ while counter < 2:
                 status_text = 'Internal Server Error'
             print("Response status code:", status_code, "-", status_text)
 
+            #3rd while loops to correct user error.
             
             while counter2 < 2:
                 cont = input("Would you like to perform another request? (Yes/No)\n").lower()
@@ -133,7 +151,7 @@ while counter < 2:
                     counter2 = 3
                 else:
                     print("Invalid input. Please enter 'Yes' or 'No'.")
-                    counter2 = 2
+                    counter3 = 2
         elif verify == "no":
             print("You've chosen to cancel, Goodbye.")
             counter = 3
