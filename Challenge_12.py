@@ -166,19 +166,5 @@ while counter < 2:
 
    
 
-# #records entry and assigns value to a variable.
-# #conditional to compare user entry with menu option's
-# if [ $entry -eq 1 ]; then
-#     print "Hello World"
-# elif [ $entry -eq 2 ]; then
-#     print "Enter your IPv4 address"
-#     read address
-#     # -c flag limits ping transmissions to # of lines specified by number after -c then stops ping
-#     ping -c 4 $address
-# elif [ $entry -eq 3 ]; then
-#     ip a
-# elif [ $entry -eq 4 ]; then 
-#     cont_var=0
-# else
-#     print "Invalid option, try again"
+
     
