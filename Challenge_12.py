@@ -95,7 +95,7 @@ while counter < 2:
         print("Your response was:", response)
     else:
         print("Invalid HTTP method. Please try again.")
-        continue
+       
 
     counter2 = 1
     while counter2 < 2:
@@ -116,27 +116,31 @@ while counter < 2:
                 status_text = 'Unauthorized'
             elif status_code == 404:
                 status_text = 'Not Found'
+            elif status_code == 405:
+                status_text = 'Invalid Request'
             elif status_code == 500:
                 status_text = 'Internal Server Error'
             print("Response status code:", status_code, "-", status_text)
 
-            counter2 = 1
+            
             while counter2 < 2:
                 cont = input("Would you like to perform another request? (Yes/No)\n").lower()
                 if cont == "yes":
-                    counter2 = 1
+                    counter2 = 2
                 elif cont == "no":
                     print("You've chosen to cancel, Goodbye.")
-                    counter = 2
-                    counter2 = 2
+                    counter = 3
+                    counter2 = 3
                 else:
                     print("Invalid input. Please enter 'Yes' or 'No'.")
-                    counter2 = 1
+                    counter2 = 2
         elif verify == "no":
             print("You've chosen to cancel, Goodbye.")
-            counter = 2
+            counter = 3
+            counter2 = 3
         else:
             print("Invalid input. Please enter 'Yes' or 'No'.")
+
 
 
 
