@@ -7,15 +7,15 @@
 #Main
 import os 
 # assigns the users input as variable "path"
-path = input("Please enter a file path\n")
 
 #uses a for loop to detect root, dirs, and files in the variable command.
-for (root, dirs, files) in os.walk(path):
-  
-    print("Root:", root)
-    
-    print("Directories: ", dirs)
-  
-    print("Files: ", files)
 
-    #End
+def list_files(path): 
+    for (root, dirs, files) in os.walk(path):
+        print("Root:", root)
+        print("Directories: ", dirs)
+        print("Files: ", files)
+path = input("Please enter a file path\n")
+
+list_files(path)
+        #End
